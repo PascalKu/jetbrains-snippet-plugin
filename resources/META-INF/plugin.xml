@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>me.baluwii.easy.snippet</id>
+    <name>EasySnippet</name>
+
+    <version>1.0.1</version>
+    <vendor email="paskutscha@gmail.com" url="https://twitter.com/iBimsBaluwii">Baluwii</vendor>
+
+    <description><![CDATA[
+      Just create code snippets while clicking on a selected button.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Added default Shortcut <em>ctrl alt 2</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="CodeMenu.Snippets" text="_Snippet" description="Snippets">
+            <add-to-group group-id="CodeMenu" anchor="last"/>
+
+            <separator/>
+            <action id="Snippets.Create" class="me.baluwii.updatesnippet.CreateSnippetAction" text="_Create a Snippet"
+                    description="Create a code snippet!">
+                <keyboard-shortcut first-keystroke="control alt 2" keymap="$default"/>
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
