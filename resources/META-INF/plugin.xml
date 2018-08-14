@@ -2,11 +2,11 @@
     <id>me.baluwii.easy.snippet</id>
     <name>EasySnippet</name>
 
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="paskutscha@gmail.com" url="https://twitter.com/iBimsBaluwii">Baluwii</vendor>
 
     <description><![CDATA[
-      Just create code snippets while clicking on a selected button.
+      Generate hastebin-snippets of a whole code file (or a selection) whenever you click on a button like <b>Code > Create a Snippet</b> or whenever you use a shortcut like <b>ctrl + alt + 2</b>.
     ]]></description>
 
     <change-notes><![CDATA[
